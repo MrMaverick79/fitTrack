@@ -1,0 +1,133 @@
+/*---- Style for fitTrack ----- */
+
+/*Universals*/
+
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+label {
+    font-size: 1.5em;
+}
+
+/*header*/
+
+
+header {
+    height: 75px;
+    display: flex;   
+    margin-bottom: 75px;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#navLinks{
+    display: flex;
+}
+
+#back{
+    display: flex;
+}
+
+#small_logo{
+    height: 75px;
+    
+}
+
+a.topNav:hover {
+    color: red;
+}
+
+
+/* Main Container*/
+
+#mainTitle{
+    text-align: center;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+/*settings */
+#settings_container {
+    width: 25%;
+    min-height: 100px ;
+    border-radius: 18%;
+    background-color: #3189EF;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: 3px solid red;
+}
+
+#timeBetweenSets {
+   font-size: 2em;
+   width: 15%;
+  
+}
+
+
+/*master container*/
+
+#master_container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}   
+
+/*rep & time containers*/
+
+.container {
+    width: 20%;
+    background-color: aquamarine;
+    margin: 40px;
+    padding: 20px;
+    min-height: 200px;
+    justify-content: center;
+    display: flex;
+   
+}
+
+
+/*buttons*/
+.plusButton{
+    background-color: rgb(82, 240, 82);
+    width: 80%;
+    font-size: 2rem;
+    margin: 5px;
+    margin-top: 20px;
+
+}
+
+.minusButton{
+    background-color: red;
+    width: 80%;
+    font-size: 2rem;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: rgb(83, 83, 83);
+}
+
+
+/*Displays for rep and time*/
+.display {
+    font-size: 2em;
+    width: 80%;
+}
+

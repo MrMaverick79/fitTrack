@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FitTrack by NewTrick</title>
+        <script src="./script/main.js" defer></script>
+        <link href="./css/reset.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap" rel="stylesheet"> 
+        <meta charset="UTF-8">
+               
+    </head>
+
+    <body>
+
+        <header>        
+                <img id="small_logo" src="./resources/images/small_logo.png"/>
+                <nav>
+                  
+                    <ul id="#navLinks">
+                        <li id="back"><a href='https://mrmaverick79.github.io' class="topNav">Back</a></li>
+                                              
+                    </ul>
+    
+                </nav>
+    
+
+        </header>
+
+        <main>
+
+        <div id="main_container">
+            <h1 id="mainTitle">FitTrack Counter</h1>
+
+            <div id = "settings_container">
+                <form id="settings">
+                    <label for="timeBetweenSets">Minutes Rest:</label><br>
+                    <input type="number" name="timeBetweenSets" id="timeBetweenSets" min="1" max="10" placeholder="3">
+                </form>
+            </div>
+
+            <!--Todo: might need a conatiner for the two? Or use grid with 2 cols?-->
+            <div id = "master_container">
+                <!--Rep counter countainer-->
+                <div class = "container one">
+
+
+                    <!--Rep counter-->
+                    <form id="rep">
+                        <label for="repDisplay">Number of Repetitions:</label><br>
+                        <input type="display" name="repDisplay" id="repDisplay"class="display" disable >
+                        <button class ="resetButton" type="button">x</button> 
+                        <button class="plusButton" type="button">+</button> <!--onclick will start timer in the repeat timer -->
+                        <button class ="minusButton" type="button">-</button> <!--onclick will start timer in the repeat timer -->
+                    </form>
+
+                
+                </div>
+
+                <!--Repeat counter container-->
+                <div class = "container two">
+
+                    <!--Repeat timer-->
+                    <form id="repeat">
+                        <label for="repeatDisplay">Time until next set: </label><br>
+                        <input type="display" name="repeatDisplay" id=" repeatDisplay" class="display" disabled>
+                        <button class ="resetButton" type="button">x</button>
+                        <button class="plusButton" type="button">+</button>
+                        <button class ="minusButton" type="button">-</button>
+                    </form>
+
+                </div>
+            </div>
+            
+            
+
+
+
+        </div>
+
+        </main>
+
+        <footer>
+            <p>(c) Brendan Tuckerman / NewTrick </p>
+
+        </footer>
+
+    </body>
+</html>
