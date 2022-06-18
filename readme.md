@@ -7,45 +7,17 @@
 **background**
 
 I need a lightweight tracker to use at the gym to keep an eye on my rep times and numbers.
-I've been using clickcounter, but this is not ideal.
-Trying to build a simple web-based timer app that uses web API.
+I've been using clickcounter, but this is not ideas as it does not have a timer function.
+This web-based app is a simple counter for use at the gym. 
 
+**To use**
 
-The idea here is that there will be field for:
+- Set the number of minutes that you intend to rest between each set.
+- After you have finished a set, use the + button to increase the set count.
+- This will start a timer for the set amount of seconds.
+- You can clear, pause, add 30 seconds with the appropriate buttons.
 
-#of Rep --> once this is clicked, it will start a timer for the rest interval set. 
-
-
-Ideally, this would also track current 1 rm of any exercise and disply percentages in increments of 5%
-
-
-
-Settings:
-- Rest time
-- Number of reps
-- Set 1rm
-
-**wirframe**
-
-NewTrick 						Settings
-
-Rep # + FIELD			Interval FIELD
-  ----------------		
-  |		 |
-  |		 |
-  ----------------
-  
-  
-  Exercise Dropdown
-  
-  List of 1 rms?
-  
-  100
-  95
-  90
-  85
-  ....
-  
+Enjoy! B. Tuckerman / NewTrick
 
 
 
