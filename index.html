@@ -3,6 +3,7 @@
     <head>
         <title>FitTrack by NewTrick</title>
         <script src="./script/main.js" defer></script>
+        <link rel="icon" href="./resources/images/small_logo.png">
         <link href="./css/reset.css" rel="stylesheet">
         <link href="./css/style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,11 +33,14 @@
 
         <div id="main_container">
             <h1 id="mainTitle">FitTrack Counter</h1>
-
+            
             <div id = "settings_container">
                 <form id="settings">
-                    <label for="timeBetweenSets">Minutes Rest:</label><br>
-                    <input type="number" name="timeBetweenSets" id="timeBetweenSets" min="1" max="10" placeholder="3">
+                    <label for="timeBetweenSets">Minutes between Sets:</label><br>
+                    <input type="display" name="timeBetweenSets" id="timeBetweenSets" min="1" max="10" value="3">
+                    <button class ="resetButton" type="button" id="restReset">Clear All</button>
+                    <button class ="plusButton" type="button" id="restIncrease">+</button>
+                    <button class = "minusButton" type="button" id="restDecrease">-</button>
                 </form>
             </div>
 
@@ -47,12 +51,12 @@
 
 
                     <!--Rep counter-->
-                    <form id="rep">
-                        <label for="repDisplay">Number of Repetitions:</label><br>
-                        <input type="display" name="repDisplay" id="repDisplay"class="display" disable >
-                        <button class ="resetButton" type="button">x</button> 
-                        <button class="plusButton" type="button">+</button> <!--onclick will start timer in the repeat timer -->
-                        <button class ="minusButton" type="button">-</button> <!--onclick will start timer in the repeat timer -->
+                    <form id="rep" class="panel">
+                        <label for="repDisplay">Sets Completed:</label><br>
+                        <input type="display" name="repDisplay" id="repDisplay"class="display" >
+                        <button class ="resetButton" type="button" id="repResetButton">Clear Reps</button> 
+                        <button class="plusButton" type="button" id="repAddButton">+</button> <!--onclick will start timer in the repeat timer -->
+                        <button class ="minusButton" type="button" id="removeRepButton">-</button> <!--onclick will start timer in the repeat timer -->
                     </form>
 
                 
@@ -62,12 +66,12 @@
                 <div class = "container two">
 
                     <!--Repeat timer-->
-                    <form id="repeat">
+                    <form id="repeat" class="panel">
                         <label for="repeatDisplay">Time until next set: </label><br>
-                        <input type="display" name="repeatDisplay" id=" repeatDisplay" class="display" disabled>
-                        <button class ="resetButton" type="button">x</button>
-                        <button class="plusButton" type="button">+</button>
-                        <button class ="minusButton" type="button">-</button>
+                        <input type="display" name="repeatDisplay" id="repeatDisplay" class="display">
+                        <button class ="resetButton" type="button" id="timerReset">Clear Time</button>
+                        <button class="plusButton" type="button" id="addThirty">Add 30s</button>
+                        <button class ="minusButton" type="button" id="pauseButton">Pause</button>
                     </form>
 
                 </div>
